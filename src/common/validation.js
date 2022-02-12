@@ -1,5 +1,3 @@
-export default {
-   isNumber: () => {
-      ret
-   },
+export function isNumber() {
+   return
 }

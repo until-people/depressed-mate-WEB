@@ -1,9 +1,12 @@
 import Header from './components/drawer'
-import Routes from './components/routes'
+import Routes from './containers/routes'
+import { BrowserRouter } from 'react-router-dom'
 function App() {
    return (
-         <Routes />
-   ) 
+      <BrowserRouter>
+         <Routes isLogin={true} />
+      </BrowserRouter>
+   )
 }
 
 export default App
