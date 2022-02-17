@@ -127,11 +127,28 @@ export default function Drawers() {
                <List component="div" disablePadding>
                   <ListItemButton sx={{ pl: 2 }}>
                      <ListItemIcon>
-                        <StarBorder />
                      </ListItemIcon>
-                     <ListItemText primary="Starred" />
+                     <ListItemText primary="Notification" />
                   </ListItemButton>
                </List>
+            </Collapse>
+            <Collapse in={settingOpen} timeout="auto" unmountOnExit>
+               <List component="div" disablePadding>
+                  <ListItemButton sx={{ pl: 2 }}>
+                     <ListItemIcon>
+                     </ListItemIcon>
+                     <ListItemText primary="Custom settings" />
+                  </ListItemButton>
+               </List>
+               <Collapse in={settingOpen} timeout="auto" unmountOnExit>
+               <List component="div" disablePadding>
+                  <ListItemButton sx={{ pl: 2 }}>
+                     <ListItemIcon>
+                     </ListItemIcon>
+                     <ListItemText primary="Fortune cookie" />
+                  </ListItemButton>
+               </List>
+            </Collapse>
             </Collapse>
          </List>
 
