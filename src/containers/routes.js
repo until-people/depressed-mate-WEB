@@ -6,6 +6,10 @@ import Login from './login/loginContainer'
 import Setting from './setting/settingContainer'
 import Admin from './admin/adminContainer'
 
+import Notification from './notification/notificationContainer'
+import CustomSettings from './customSettings/customSettingsContainer'
+import FortuneCookie from './fortuneCookie/fortuncCookieContainer'
+
 import CoverContainer from './cover'
 import Test from '../components/screens/test'
 
@@ -35,6 +39,15 @@ function Routes(props) {
 
             {/* back office : 필요 시 */}
             <Route exact path="/admin" component={Admin} />
+
+            {/* 알림 */}
+            <Route exact path="/notification" component={Notification} />
+
+            {/* 커스텀 */}
+            <Route exact path="/customSettings" component={CustomSettings} />
+
+            {/* 포춘쿠키 */}
+            <Route exact path="/fortuneCookie" component={FortuneCookie} />
          </CoverContainer>
       </Switch>
    )

@@ -124,8 +124,8 @@ export default function Drawers() {
                </ListItem>
             ))}
             <Collapse in={settingOpen} timeout="auto" unmountOnExit>
-               <List component="div" disablePadding>
-                  <ListItemButton sx={{ pl: 2 }}>
+               <List component="div"  disablePadding>
+                  <ListItemButton sx={{ pl: 2 }}  onClick={'/notification' }>
                      <ListItemIcon>
                      </ListItemIcon>
                      <ListItemText primary="Notification" />
