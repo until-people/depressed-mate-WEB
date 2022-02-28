@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import MySchedule from './myScheduleComponent'
+
 class MyScheduleContainer extends PureComponent {
    constructor(props) {
       super(...arguments)
